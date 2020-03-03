@@ -51,7 +51,7 @@ const ContributorList = Loadable.Map<Props, Export>({
   },
   loading: (props: LoadingComponentProps) => {
     if (props.error) {
-      return <ApiError dataName="venue locations" retry={props.retry} />;
+      return <ApiError dataName="contributors list" retry={props.retry} />;
     }
     if (props.pastDelay) {
       return <LoadingSpinner />;
